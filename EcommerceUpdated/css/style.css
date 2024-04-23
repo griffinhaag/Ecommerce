@@ -1,0 +1,32 @@
+.image-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	transition: transform 0.5s ease;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.image-container:hover .image {
+	transform: scale(1.1);
+}
+.image-container:hover .overlay{
+	opacity: 1;
+}
+
+.overlay a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
